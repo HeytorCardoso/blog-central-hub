@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*
+.sidebar {display: none;}
+
+@media (min-width:768px) {
+    .sidebar {display: block;}
+}
+*/
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+/* HEADER */
+.div-header {
+    color: #64748b;
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.2em;
+    border-bottom: solid #e8e8e8 2px;
+}
+
+.div-header p{
+    font-size: 0.9em;
+}
+
+/* MAIS ESPAÇO NO DESKTOP 
+@media (min-width:768px) {
+    .div-header {
+        justify-content: flex-end;
+        padding: 0 2em;
+        gap: 2em;
+    }
+*/
+
+.div-header p {
+        margin-left: 0.5em;
+    }
+
+/* ESPAÇO ENTRE TEXTOS NO MOBILE 
+@media (max-width:767px) {
+    .div-header {
+        gap: 1em;
+    }
+
+    .div-header p {
+        padding: 0.3em 0;
+    }
+}
+*/
+
+
+.div-header p:hover {
+    cursor: pointer;
+    transition: linear 0.2s;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    color: black;
+    font-weight: bold;
+    gap: 0.6em;
+    margin-right: auto;
+}
+
+.general {
+    /*border: solid green 2px;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+/* Menu */
+.menu-field {
+    font-size: 0.8em;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    border: #e8e8e8 solid 2px;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: 3%;
+    transition: linear 0.2s;
+}
+
+.menu-field:hover {
+    border: solid 2px rgb(0, 0, 0);
+}
+
+.menu-field p {
+    text-align: center;
+    color: #64748b;
+}
+
+
+/* Articles */
+
+.content {
+    padding-top: 2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* 🔹 DESKTOP: 2 CARDS POR LINHA
+@media (min-width:1024px) {
+    .articles-field {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+.articles-field {
+    padding: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    width: 100%;
+    background-color: #f1f1f165;
+    border: #e8e8e8 solid 2px;
+    border-top: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*border: solid blue 2px;*/
+    gap: 1em;
+}
+
+.article-field-comp {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.7em;
+}
+
+.article-field {
+    /*border: solid red 2px;*/
+    width: 100%;
+}
+
+.article-card {
+    text-align: justify;
+    background-color: white;
+    font-size: 0.8em;
+    text-align: center;
+    width: 95.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    border: #e8e8e8 solid 2px;
+    border-radius: 1em;
+    padding: 2%;
+    transition: linear 0.2s;
+}
+
+.article-card:hover {
+    border: solid 2px rgba(1, 186, 186, 0.578);
+}
+
+.article-card p {
+    text-align: justify;
+    color: #64748b;
+}
+
+
+
+
+/* REDIRECT BUTTONS */
+
+.redirect-button {
+    background-color: #000000;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 10%;
+    border-radius: 0.4em;
+    border: solid #e8e8e8 2px;
+    gap: 0.5em;
+    transition: linear 0.2s;
+}
+
+.redirect-button:hover {
+    transform: scale(1.05);
+    background-color: #737373;
+}
+
+.redirect-button:active {
+    transform: scale(0.9);
+    background-color: #e8e8e8;
+}
+
+.repo-button {
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 10%;
+    border-radius: 0.4em;
+    border: solid #e8e8e8 2px;
+    gap: 0.5em;
+    transition: linear 0.2s;
+}
+
+.repo-button:hover {
+    gap: 1.1em;
+    border: solid black 2px;
+}
+
+.repo-button:active {
+    color: white;
+    background-color: black;
+    transform: scale(0.9);
+}
+
+.edit-btn {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    border-radius: 1em;
+    offset: 100;
+    cursor: pointer;
+}
+
+.delete-btn {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 1em;
+    offset: 100;
+    cursor: pointer;
+}
+
+.create-btn {
+    position: relative;
+    left: 100%;
+    bottom: 100%;
+    transform: translate(-50%,-50%);
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    border-radius: 0.7em;
+    offset: 100;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.div-footer1 {
+    text-align: center;
+    border-top: solid #e8e8e8 2px;
+    color: #64748b;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.div-footer2 {
+    color: #64748b;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-bottom: 1em;
+}
+
+.div-footer2 p:hover {
+    color: black;
+    transition: linear 0.2s;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.hearth {
+    width: 30px;
+    height: 30px;
+  background-color: rgb(0, 0, 0); /* A cor que você quer que o ícone tenha */
+  -webkit-mask-image: url('../images/heart-regular-full.svg');
+  mask-image: url('../images/heart-regular-full.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  offset: -100;
+}
+
+.hearth:hover {
+    width: 30px;
+    height: 30px;
+  background-color: rgb(204, 10, 10); /* A cor que você quer que o ícone tenha */
+  -webkit-mask-image: url('../images/heart-regular-full.svg');
+  mask-image: url('../images/heart-regular-full.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  offset: -100;
+  cursor: pointer;
+}
+
+.hearth:active {
+    width: 30px;
+    height: 30px;
+  background-color: rgb(204, 10, 10); /* A cor que você quer que o ícone tenha */
+  -webkit-mask-image: url('../images/heart-solid-full.svg');
+  mask-image: url('../images/heart-solid-full.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  offset: -100;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+  background-color: rgb(0, 0, 0); /* A cor que você quer que o ícone tenha */
+  -webkit-mask-image: url('../images/star-regular-full.svg');
+  mask-image: url('../images/star-regular-full.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  offset: -100;
+}
+
+.star:hover {
+    width: 30px;
+    height: 30px;
+  background-color: rgb(255, 247, 24); /* A cor que você quer que o ícone tenha */
+  -webkit-mask-image: url('../images/star-regular-full.svg');
+  mask-image: url('../images/star-regular-full.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  offset: -100;
+  cursor: pointer;
+}
+
+.star:active {
+    width: 30px;
+    height: 30px;
+  background-color: rgb(255, 247, 24); /* A cor que você quer que o ícone tenha */
+  -webkit-mask-image: url('../images/star-solid-full.svg');
+  mask-image: url('../images/star-solid-full.svg');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  offset: -100;
+}
+
+.ql-align-center {
+    text-align: center;
+}
+.ql-align-right {
+    text-align: right;
+}
+.ql-align-justify {
+    text-align: justify;
+}
+.ql-align-left {
+    text-align: left;
+}
